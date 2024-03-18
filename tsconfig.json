@@ -5,11 +5,6 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "allowJs": true,
-    "outDir": "./lib/cjs/",
-    "sourceMap": true,
-    "declaration": true,
-    "noImplicitAny": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
