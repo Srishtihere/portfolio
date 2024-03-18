@@ -6,7 +6,6 @@ import Experience from "../Pages/Experience";
 import Projects from "../Pages/Projects";
 import PageNotFound from "../Pages/PageNotFound";
 import Blogs from "../Pages/Blogs";
-import React = require("react");
 
 const router = createBrowserRouter([
   {
