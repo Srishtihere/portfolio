@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import SidebarNavs from "../assets/Data/SidebarData";
+import React from "react";
 
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();

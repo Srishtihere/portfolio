@@ -1,3 +1,4 @@
+import React from "react";
 const SkillUsed: React.FC<{ skills: string[] }> = ({ skills }) => {
   return (
     <div className="h-auto w-full flex flex-wrap justify-start">
