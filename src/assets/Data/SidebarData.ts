@@ -9,7 +9,7 @@ const SidebarNavs: SidebarType[] = [
   {
     id: 1,
     name: "Dashboard",
-    destination: "Home",
+    destination: "",
     svg: `<svg
   width="30px"
   height="30px"
