@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <a
             onClick={() => {
-              navigate("/Home");
+              navigate("/");
             }}
             className="flex items-center ps-2.5 mb-5"
           >
