@@ -1,4 +1,3 @@
-import React from "react";
 import LangData from "../../assets/Data/Language";
 const Language = () => {
   return (

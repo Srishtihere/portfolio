@@ -1,4 +1,3 @@
-import React from "react";
 import EducationList from "../../assets/Data/Education";
 import { FaBookmark } from "react-icons/fa";
 const Eduaction = () => {

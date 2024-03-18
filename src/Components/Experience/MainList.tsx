@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceData from "../../assets/Data/Experience";
 import SkillUsed from "./skillUsed";
 import Description from "./Description";

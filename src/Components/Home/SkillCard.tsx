@@ -1,5 +1,3 @@
-import React from "react";
-
 const SkillCard: React.FC<{ title: string; children: React.ReactNode }> = ({
   title,
   children,

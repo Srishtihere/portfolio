@@ -1,4 +1,3 @@
-import React from "react";
 import interests from "../../assets/Data/Interests";
 const Interests = () => {
   return (

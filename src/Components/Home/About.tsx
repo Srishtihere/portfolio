@@ -1,4 +1,3 @@
-import React from "react";
 import srishtiPfp from "../../assets/srishti.jpg";
 
 export const About = () => {

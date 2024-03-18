@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCircleRight } from "react-icons/fa6";
 
 const Description: React.FC<{ description: string[] }> = ({ description }) => {
