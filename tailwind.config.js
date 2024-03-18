@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "dark",
+  darkMode: "",
   content: [
     // "./index.html",
-    "./src/**/*.tsx",
+    "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
