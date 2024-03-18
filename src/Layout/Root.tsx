@@ -1,11 +1,11 @@
-import Topbar from "../Components/Topbar";
+import Sidebar from "../Components/Sidebar";
 import Footer from "../Components/Footer";
 import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
     <>
-      <Topbar />
+      <Sidebar />
       <div className="p-4 sm:ml-64">
         <Outlet />
         <Footer />

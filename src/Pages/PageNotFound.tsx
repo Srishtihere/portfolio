@@ -1,7 +1,7 @@
-import React from "react";
+import PNFLayout from "../Components/PageNotFound/PNFLayout";
 
 const PageNotFound = () => {
-  return <div>PageNotFound</div>;
+  return <PNFLayout />;
 };
 
 export default PageNotFound;

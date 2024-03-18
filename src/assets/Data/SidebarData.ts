@@ -1,46 +1,43 @@
-interface NavType {
+interface SidebarType {
   id: number;
   name: string;
-  svg: any;
+  svg: string;
   destination: string;
 }
 
-const NavData: NavType[] = [
+const SidebarNavs: SidebarType[] = [
   {
     id: 1,
     name: "Dashboard",
-    svg: (
-      <svg
-        width="30px"
-        height="30px"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        id="dashboard"
-        className="icon glyph flex-shrink-0 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-green-400 dark:group-hover:text-white"
-      >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          <rect x="2" y="2" width="9" height="11" rx="2"></rect>
-          <rect x="13" y="2" width="9" height="7" rx="2"></rect>
-          <rect x="2" y="15" width="9" height="7" rx="2"></rect>
-          <rect x="13" y="11" width="9" height="11" rx="2"></rect>
-        </g>
-      </svg>
-    ),
     destination: "Home",
+    svg: `<svg
+  width="30px"
+  height="30px"
+  fill="currentColor"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  id="dashboard"
+  className="icon glyph flex-shrink-0 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-green-400 dark:group-hover:text-white"
+>
+  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+  <g
+    id="SVGRepo_tracerCarrier"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  ></g>
+  <g id="SVGRepo_iconCarrier">
+    <rect x="2" y="2" width="9" height="11" rx="2"></rect>
+    <rect x="13" y="2" width="9" height="7" rx="2"></rect>
+    <rect x="2" y="15" width="9" height="7" rx="2"></rect>
+    <rect x="13" y="11" width="9" height="11" rx="2"></rect>
+  </g>
+</svg>`,
   },
   {
     id: 2,
     name: "Experience",
-    svg: (
-      <svg
+    svg: `<svg
         viewBox="-0.5 0 33 33"
         version="1.1"
         aria-hidden="true"
@@ -86,15 +83,13 @@ const NavData: NavType[] = [
             </g>{" "}
           </g>{" "}
         </g>
-      </svg>
-    ),
+      </svg>`,
     destination: "Experience",
   },
   {
     id: 3,
     name: "Projects",
-    svg: (
-      <svg
+    svg: ` <svg
         width="30px"
         height="30px"
         fill="currentColor"
@@ -115,15 +110,13 @@ const NavData: NavType[] = [
           <title>code</title>{" "}
           <path d="M12 24h4v4h-12v-4h4v-4h4v4zM28 24v-4h-4v4h4zM4 16v4h4v-4h-4zM20 28h4v-4h-4v4zM24 12v4h4v-12h-4v4h-4v4h4zM20 16v-4h-4v-4h4v-4h-12v4h-4v4h4v4h4v4h4v4h4v-4h4v-4h-4z"></path>{" "}
         </g>
-      </svg>
-    ),
+      </svg>`,
     destination: "Projects",
   },
   {
     id: 4,
     name: "Community",
-    svg: (
-      <svg
+    svg: `<svg
         viewBox="0 0 64 64"
         data-name="Layer 1"
         id="Layer_1"
@@ -149,15 +142,13 @@ const NavData: NavType[] = [
           <path d="M52,38.74V37.10193a3.09593,3.09593,0,0,0-1.99084-2.88806,3,3,0,1,0-4.01832,0A3.09593,3.09593,0,0,0,44,37.10193V38.74a6.97916,6.97916,0,0,0,8,0Z"></path>
           <path d="M32,63A30,30,0,1,0,2,33,30,30,0,0,0,32,63Zm0-6a9,9,0,1,1,9-9A9,9,0,0,1,32,57ZM48,23a9,9,0,1,1-9,9A9,9,0,0,1,48,23ZM32,7a9,9,0,1,1-9,9A9,9,0,0,1,32,7ZM7,32a9,9,0,1,1,9,9A9,9,0,0,1,7,32Z"></path>
         </g>
-      </svg>
-    ),
+      </svg>`,
     destination: "Community",
   },
   {
     id: 5,
     name: "Blogs",
-    svg: (
-      <svg
+    svg: `<svg
         version="1.1"
         id="Capa_1"
         xmlns="http://www.w3.org/2000/svg"
@@ -201,10 +192,9 @@ const NavData: NavType[] = [
             <g> </g>{" "}
           </g>{" "}
         </g>
-      </svg>
-    ),
+      </svg>`,
     destination: "Blogs",
   },
 ];
 
-export default NavData;
+export default SidebarNavs;

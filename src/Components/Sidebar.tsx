@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import NavData from "../assets/TopbarData";
+import SidebarNavs from "../assets/Data/SidebarData";
 
-const Topbar: React.FC = () => {
+const Sidebar: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -46,16 +46,19 @@ const Topbar: React.FC = () => {
             </span>
           </a>
           <ul className="space-y-2 font-medium">
-            {NavData.length &&
-              NavData.map((item) => (
+            {SidebarNavs.length &&
+              SidebarNavs.map((item) => (
                 <li
                   onClick={() => {
                     navigate(`/${item.destination}`);
                   }}
                   key={item.id}
                 >
-                  <a className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                    {item.svg}
+                  <a className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group group-hover:text-green-400">
+                    <div
+                      className="text-gray-900 rounded-lg dark:text-white hover:text-green-400 dark:hover:bg-gray-700 group-hover:text-green-400"
+                      dangerouslySetInnerHTML={{ __html: item.svg }}
+                    />
                     <span className="ms-3 group-hover:text-green-400">
                       {item.name}
                     </span>
@@ -69,4 +72,4 @@ const Topbar: React.FC = () => {
   );
 };
 
-export default Topbar;
+export default Sidebar;
