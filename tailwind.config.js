@@ -2,7 +2,7 @@
 export default {
   darkMode: "dark",
   content: [
-    "./index.html",
+    // "./index.html",
     "./src/**/*.tsx",
     "./node_modules/flowbite/**/*.js",
   ],
