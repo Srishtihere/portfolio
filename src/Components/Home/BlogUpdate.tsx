@@ -1,8 +1,8 @@
-import { FaCircleArrowRight } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
+import NavButton from "../NavButton";
 
 const BlogUpdate = () => {
-  const navigate = useNavigate();
   return (
     <div className="flex justify-between align-middle flex-col max-h-183 p-1 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <div className="max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -12,26 +12,21 @@ const BlogUpdate = () => {
         <h5 className="my-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
           All about useReducer() in TypesScript
         </h5>
+
         <a
-          href="https://medium.com/@srishtimajumder2002/all-about-usereducer-in-typesscript-e1851d98c93d"
+          href="ttps://medium.com/@srishtimajumder2002/all-about-usereducer-in-typesscript-e1851d98c93d"
           className="inline-flex font-medium items-center text-blue-600 hover:underline"
           target="_blank"
         >
-          See here {">>>"}
+          See here{" "}
+          <FaArrowUpRightFromSquare
+            size={15}
+            className="mx-1 flex justify-center align-middle"
+          />
         </a>
       </div>
 
-      <button
-        type="button"
-        className="flex justify-center align-middle text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm p-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 mt-1"
-        onClick={() => navigate("/Blogs")}
-      >
-        Other Blogs{" "}
-        <FaCircleArrowRight
-          size={20}
-          className="mx-3 flex justify-center align-middle"
-        />
-      </button>
+      <NavButton NavigateName="blogs" BtnName="Other Blogs" />
     </div>
   );
 };

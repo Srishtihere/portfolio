@@ -28,6 +28,9 @@ const Sidebar: React.FC = () => {
           ></path>
         </svg>
       </button>
+      {/* <aside id="defaultSidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform sm:translate-x-0 transform-none" aria-label="Sidebar" aria-modal="true" role="dialog"> */}
+
+      {/* transform-none aria-modal="true" role="dialog" body oerflow hidden*/}
 
       <aside
         id="defaultSidebar"

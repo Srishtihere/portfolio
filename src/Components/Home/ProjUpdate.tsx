@@ -1,8 +1,6 @@
-import { FaCircleArrowRight } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import NavButton from "../NavButton";
 
 const ProjUpdate = () => {
-  const navigate = useNavigate();
   return (
     <div className="flex justify-between align-middle flex-col max-h-183 p-1 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 col-span-2">
       <div className="flex justify-between align-middle">
@@ -36,17 +34,7 @@ const ProjUpdate = () => {
         </div>
       </div>
 
-      <button
-        type="button"
-        className="flex justify-center align-middle text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm p-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 mt-1"
-        onClick={() => navigate("/Projects")}
-      >
-        See completed Projects{" "}
-        <FaCircleArrowRight
-          size={20}
-          className="mx-3 flex justify-center align-middle"
-        />
-      </button>
+      <NavButton BtnName="see completed Projects" NavigateName="Projects" />
     </div>
   );
 };
