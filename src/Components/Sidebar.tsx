@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import SidebarNavs from "../assets/Data/SidebarData";
 import React from "react";
-import { IoCloseCircleSharp } from "react-icons/io5";
+import { LuPanelLeftClose } from "react-icons/lu";
 
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();
+
   const closeSidebar = () => {
     document.body.style.overflow = "";
+    document.body.classList.remove("overflow-hidden");
     const sidebar = document.getElementById("defaultSidebar");
     sidebar?.removeAttribute("aria-modal");
     sidebar?.removeAttribute("role");
@@ -41,15 +43,12 @@ const Sidebar: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            clip-rule="evenodd"
-            fill-rule="evenodd"
+            clipRule="evenodd"
+            fillRule="evenodd"
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
       </button>
-      {/* <aside id="defaultSidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform sm:translate-x-0 transform-none" aria-label="Sidebar" aria-modal="true" role="dialog"> */}
-
-      {/* transform-none aria-modal="true" role="dialog" body oerflow hidden*/}
 
       <aside
         id="defaultSidebar"
@@ -68,10 +67,10 @@ const Sidebar: React.FC = () => {
                 Srishti Majumder
               </span>
             </a>
-            <IoCloseCircleSharp
+            <LuPanelLeftClose
               onClick={closeSidebar}
               size={30}
-              className="text-green-400 hover:text-green-700 sm:hidden"
+              className="text-slate-400 hover:text-slate-950 sm:hidden"
             />
           </div>
 

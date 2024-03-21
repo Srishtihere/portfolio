@@ -61,14 +61,14 @@ const SidebarNavs: SidebarType[] = [
             stroke="none"
             stroke-width="1"
             fill="none"
-            fill-rule="evenodd"
+             fillRule="evenodd"
           >
             {" "}
             <g
               id="ui-gambling-website-lined-icnos-casinoshunter"
               transform="translate(-2554.000000, -285.000000)"
               fill="currentColor"
-              fill-rule="nonzero"
+               fillRule="nonzero"
             >
               {" "}
               <g id="1" transform="translate(1350.000000, 120.000000)">
