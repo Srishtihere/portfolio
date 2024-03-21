@@ -1,12 +1,31 @@
 import { useNavigate } from "react-router-dom";
 import SidebarNavs from "../assets/Data/SidebarData";
 import React from "react";
+import { IoCloseCircleSharp } from "react-icons/io5";
 
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();
+  const closeSidebar = () => {
+    document.body.style.overflow = "";
+    const sidebar = document.getElementById("defaultSidebar");
+    sidebar?.removeAttribute("aria-modal");
+    sidebar?.removeAttribute("role");
+    sidebar?.classList.remove("transform-none");
+    sidebar?.setAttribute("aria-hidden", "true");
+  };
+
+  const openSidebar = () => {
+    document.body.style.overflow = "hidden";
+    const sidebar = document.getElementById("defaultSidebar");
+    sidebar?.setAttribute("aria-modal", "true");
+    sidebar?.setAttribute("role", "dialog");
+    sidebar?.classList.add("transform-none");
+    sidebar?.removeAttribute("aria-hidden");
+  };
   return (
     <>
       <button
+        onClick={openSidebar}
         data-drawer-target="defaultSidebar"
         data-drawer-toggle="defaultSidebar"
         aria-controls="defaultSidebar"
@@ -34,20 +53,28 @@ const Sidebar: React.FC = () => {
 
       <aside
         id="defaultSidebar"
-        className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full  sm:translate-x-0"
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <a
-            onClick={() => {
-              navigate("/");
-            }}
-            className="flex items-center ps-2.5 mb-5"
-          >
-            <span className="self-center hover:text-green-400 text-xl font-semibold whitespace-nowrap dark:text-white">
-              Srishti Majumder
-            </span>
-          </a>
+          <div className="flex justify-between">
+            <a
+              onClick={() => {
+                navigate("/");
+              }}
+              className="flex items-center ps-2.5 mb-5"
+            >
+              <span className="self-center hover:text-green-400 text-xl font-semibold whitespace-nowrap dark:text-white">
+                Srishti Majumder
+              </span>
+            </a>
+            <IoCloseCircleSharp
+              onClick={closeSidebar}
+              size={30}
+              className="text-green-400 hover:text-green-700 sm:hidden"
+            />
+          </div>
+
           <ul className="space-y-2 font-medium">
             {SidebarNavs.length &&
               SidebarNavs.map((item) => (
