@@ -4,6 +4,8 @@ import React from "react";
 import { LuPanelLeftClose } from "react-icons/lu";
 import logo from "../assets/logo-without-bg.png";
 
+import { FaDownload } from "react-icons/fa6";
+
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();
 
@@ -57,7 +59,7 @@ const Sidebar: React.FC = () => {
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <div className="flex justify-between align-middle items-center rounded-lg ">
+          <div className="flex h-auto justify-between align-middle items-center rounded-lg ">
             <a
               onClick={() => {
                 navigate("/");
@@ -76,27 +78,52 @@ const Sidebar: React.FC = () => {
             />
           </div>
 
-          <ul className="space-y-2 font-medium">
-            {SidebarNavs.length &&
-              SidebarNavs.map((item) => (
-                <li
-                  onClick={() => {
-                    navigate(`/${item.destination}`);
-                  }}
-                  key={item.id}
-                >
-                  <a className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group group-hover:text-green-400">
-                    <div
-                      className="text-gray-900 rounded-lg dark:text-white hover:text-green-400 dark:hover:bg-gray-700 group-hover:text-green-400"
-                      dangerouslySetInnerHTML={{ __html: item.svg }}
-                    />
-                    <span className="ms-3 group-hover:text-green-400">
-                      {item.name}
-                    </span>
-                  </a>
-                </li>
-              ))}
-          </ul>
+          <div className="flex h-[77%] flex-col justify-between">
+            <ul className="space-y-2 font-medium">
+              {SidebarNavs.length &&
+                SidebarNavs.map((item) => (
+                  <li
+                    onClick={() => {
+                      navigate(`/${item.destination}`);
+                    }}
+                    key={item.id}
+                  >
+                    <a className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group group-hover:text-green-400">
+                      <div
+                        className="text-gray-900 rounded-lg dark:text-white hover:text-green-400 dark:hover:bg-gray-700 group-hover:text-green-400"
+                        dangerouslySetInnerHTML={{ __html: item.svg }}
+                      />
+                      <span className="ms-3 group-hover:text-green-400">
+                        {item.name}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+            </ul>
+
+            <div className="flex flex-col justify-center align-middle">
+              <label className="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" className="sr-only peer" />
+                <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-700"></div>
+                <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+                  Dark Mode
+                </span>
+              </label>
+              <a
+                type="button"
+                className="flex mt-2 justify-center align-middle text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm p-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                href="https://drive.google.com/file/d/1iqodeYs49Zycth3-XE1oTvraS1PaEktU/view?usp=sharing"
+                target="_blank"
+                download
+              >
+                Download Resume{" "}
+                <FaDownload
+                  size={20}
+                  className="mx-3 flex justify-center align-middle"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </aside>
     </>
