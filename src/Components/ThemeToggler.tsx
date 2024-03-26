@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const ThemeToggler = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const handleDarkMode = () => setDarkMode(!darkMode);
+  // const handleDarkMode = () => setDarkMode(!darkMode);
   useEffect(() => {
     document.body.classList.toggle("dark", darkMode);
     document.body.classList.toggle("bg-gray-900", darkMode);
