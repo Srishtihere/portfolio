@@ -1,5 +1,13 @@
+import BlogList from "../Components/Blogs/BlogList";
+import PageTitle from "../Components/PageTitle";
+
 const Blogs = () => {
-  return <div>Blogs</div>;
+  return (
+    <>
+      <PageTitle name="Blogs" />
+      <BlogList />
+    </>
+  );
 };
 
 export default Blogs;

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import SidebarNavs from "../assets/Data/SidebarData";
 import React from "react";
 import { LuPanelLeftClose } from "react-icons/lu";
+import logo from "../assets/logo-without-bg.png";
 
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();
@@ -56,13 +57,14 @@ const Sidebar: React.FC = () => {
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <div className="flex justify-between">
+          <div className="flex justify-between align-middle items-center rounded-lg ">
             <a
               onClick={() => {
                 navigate("/");
               }}
-              className="flex items-center ps-2.5 mb-5"
+              className="flex flex-col items-center ps-2.5 mb-5"
             >
+              <img src={logo} className="w-20 h-20" />
               <span className="self-center hover:text-green-400 text-xl font-semibold whitespace-nowrap dark:text-white">
                 Srishti Majumder
               </span>
