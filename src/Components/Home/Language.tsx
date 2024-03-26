@@ -1,7 +1,7 @@
 import LangData from "../../assets/Data/Language";
 const Language = () => {
   return (
-    <div className="flex justify-around flex-col  max-h-183 p-4 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 col-span-2">
+    <div className="flex justify-around flex-col  max-h-183 p-4 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700  col-span-2">
       <h5 className="mb-2 text-xl font-medium tracking-tight text-slate-950 dark:text-white">
         Language
       </h5>
@@ -12,9 +12,9 @@ const Language = () => {
               {item.name}
             </dt>
             <dd className="flex w-5/6 items-center mb-3">
-              <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 me-2">
+              <div className="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-800 me-2">
                 <div
-                  className="bg-green-400 h-4 rounded dark:bg-blue-500"
+                  className="bg-green-400 h-4 rounded dark:bg-green-700"
                   style={{ width: `${item.proficiency}%` }}
                 ></div>
               </div>

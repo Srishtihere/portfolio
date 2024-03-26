@@ -2,7 +2,7 @@ import NavButton from "../NavButton";
 
 const ComUpdate = () => {
   return (
-    <div className="flex justify-between align-middle flex-col max-h-183 p-1 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+    <div className="flex justify-between align-middle flex-col max-h-183 p-1 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-700 dark:border-gray-700 ">
       <div className="max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <span className="bg-green-100 text-green-800 text-xs font-medium mb-5 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
           Active
@@ -14,7 +14,7 @@ const ComUpdate = () => {
         <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
           Organizer
         </p>
-        <p className="font-semibold italic text-gray-800 dark:text-gray-600">
+        <p className="font-semibold italic text-gray-800 dark:text-gray-500">
           Oct 2022 - Active
         </p>
       </div>

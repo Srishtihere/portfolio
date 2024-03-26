@@ -3,7 +3,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 const Contact = () => {
   return (
-    <div className="max-h-183 p-4 border border-gray-200 rounded-lg bg-slate-950 dark:bg-white dark:border-gray-700 dark:hover:bg-gray-700 col-span-2">
+    <div className="max-h-183 p-4 border border-gray-200 rounded-lg bg-slate-950 dark:bg-white dark:border-gray-700  col-span-2">
       <h5 className="h-2/6 text-xl font-medium tracking-tight text-white dark:text-slate-900">
         Let's chat! I'm ready to work on exciting projects /freelance.
       </h5>

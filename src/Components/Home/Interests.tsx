@@ -1,7 +1,7 @@
 import interests from "../../assets/Data/Interests";
 const Interests = () => {
   return (
-    <div className="max-h-183 p-4 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 col-span-2">
+    <div className="max-h-183 p-4 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700  col-span-2">
       <h5 className="mb-2 h-1/6 text-xl font-medium tracking-tight text-slate-950 dark:text-white">
         Interests
       </h5>

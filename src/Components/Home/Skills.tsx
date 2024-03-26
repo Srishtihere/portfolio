@@ -3,7 +3,7 @@ import { Lib, ProgLang } from "../../assets/Data/Skills";
 
 const Skills = () => {
   return (
-    <div className="flex justify-evenly flex-col max-h-183 p-4 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 row-span-2 ">
+    <div className="flex justify-evenly flex-col max-h-183 p-4 border border-gray-200 rounded-lg bg-gray-200 dark:bg-gray-700 dark:border-gray-700  row-span-2 ">
       <h5 className="text-xl font-medium tracking-tight text-slate-950 dark:text-white">
         Skills/ Technology
       </h5>

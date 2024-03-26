@@ -2,9 +2,10 @@ import { useNavigate } from "react-router-dom";
 import SidebarNavs from "../assets/Data/SidebarData";
 import React from "react";
 import { LuPanelLeftClose } from "react-icons/lu";
-import logo from "../assets/logo-without-bg.png";
+import logo from "../assets/logo.png";
 
 import { FaDownload } from "react-icons/fa6";
+import ThemeToggler from "./ThemeToggler";
 
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();
@@ -66,8 +67,8 @@ const Sidebar: React.FC = () => {
               }}
               className="flex flex-col items-center ps-2.5 mb-5"
             >
-              <img src={logo} className="w-20 h-20" />
-              <span className="self-center hover:text-green-400 text-xl font-semibold whitespace-nowrap dark:text-white">
+              <img src={logo} className="w-20 h-20 rounded-full" />
+              <span className="self-center hover:text-green-400 text-xl font-semibold whitespace-nowrap dark:text-white dark:hover:text-green-400">
                 Srishti Majumder
               </span>
             </a>
@@ -102,13 +103,8 @@ const Sidebar: React.FC = () => {
             </ul>
 
             <div className="flex flex-col justify-center align-middle">
-              <label className="inline-flex items-center cursor-pointer">
-                <input type="checkbox" value="" className="sr-only peer" />
-                <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-700"></div>
-                <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-                  Dark Mode
-                </span>
-              </label>
+              <ThemeToggler />
+
               <a
                 type="button"
                 className="flex mt-2 justify-center align-middle text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm p-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
