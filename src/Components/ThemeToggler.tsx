@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ThemeToggler = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -11,7 +11,7 @@ const ThemeToggler = () => {
     <label className="inline-flex items-center cursor-pointer">
       <input
         type="checkbox"
-        value={darkMode}
+        checked={darkMode}
         className="sr-only peer"
         onChange={(e) => {
           setDarkMode(e.target.checked);
