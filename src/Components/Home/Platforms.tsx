@@ -6,7 +6,7 @@ const Platforms = () => {
       <h5 className=" mb-5 text-xl font-medium tracking-tight text-slate-950 dark:text-white">
         Tools/ Platforms
       </h5>
-      <div className=" grid grid-cols-3 gap-1 w-full max-h-183 p-3 border border-gray-200 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 my-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 w-full max-h-183 p-3 border border-gray-200 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 my-4">
         {PlatfromsList.map((item) => (
           <div
             key={item.id}
