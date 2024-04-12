@@ -28,6 +28,16 @@ const ProjectData: ProjectType[] = [
     Website: "https://aero-insight-hub.netlify.app/",
   },
   {
+    id: 9,
+    name: "Gita for Life",
+    description:
+      "Welcome to Gita-for-Life, your ultimate online resource for exploring the profound teachings of the Bhagavad Gita, along with captivating narratives from the Mahabharata and Ramayana epics. Immerse yourself in the timeless wisdom of ancient scriptures, as we delve into the essence of life, morality, and spirituality.",
+    imageURL:
+      "https://github.com/Srishtihere/Gita-for-Life/raw/main/src/assets/gfl-logo.png",
+    github: "https://github.com/Srishtihere/Gita-for-Life",
+    Website: "https://gita-for-life.netlify.app/",
+  },
+  {
     id: 3,
     name: "E-Support",
     description:
