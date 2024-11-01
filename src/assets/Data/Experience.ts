@@ -10,6 +10,25 @@ interface Experience {
 const ExperienceData: Experience[] = [
   {
     id: 1,
+    Company_name: "Blackspektro",
+    Role: "Software Engineer",
+    description: [
+      "At Blackspektro, I work on cutting-edge engineering projects that involve a mix of innovation and problem-solving. My day-to-day tasks include designing, coding, and testing software for solutions in fields like industrial IoT, AI applications, and smart product integration. ",
+      "I collaborate closely with a team to brainstorm and implement efficient, tech-driven strategies. Additionally, I stay up-to-date with new technologies, continuously improving and optimizing systems to deliver high-quality results that align with our clients' needs in sectors like agritech, robotics, and beyond.",
+    ],
+    date: "07/2024 – present",
+    skills: [
+      "React",
+      "NextJS",
+      "Azure",
+      "Router",
+      "Axios",
+      "API Integration",
+      "Tailwind",
+    ],
+  },
+  {
+    id: 2,
     Company_name: "Digital Product School",
     Role: "Software Engineer Intern",
     description: [
